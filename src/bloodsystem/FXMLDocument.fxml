@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="821.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Çalışan Ekle">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.0" minWidth="10.0" prefWidth="250.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="520.0" minWidth="10.0" prefWidth="479.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="479.0" minWidth="10.0" prefWidth="145.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="175.0" minHeight="10.0" prefHeight="175.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="103.0" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="175.0" minHeight="0.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="245.0" minHeight="6.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="293.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="293.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ComboBox fx:id="WorkerType" prefWidth="150.0" promptText="Worker Type">                  
+                        <items>
+                          <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Receptionist" />
+                            <String fx:value="Nurse" />
+                            <String fx:value="LabWorker" />
+                          </FXCollections>
+                        </items>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets left="30.0" top="120.0" />
+                     </GridPane.margin>
+                    </ComboBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adı" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Soyadı" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Çalışan Bilgileri" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets top="-90.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E-Posta" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Şifre" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Telefon Numarası" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <PasswordField fx:id="Wsifre" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="Wmail" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="Wname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="Wsname" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="Wphone" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button mnemonicParsing="false" text="Button" GridPane.rowIndex="6" />
+                  <Button mnemonicParsing="false" text="Çalışan Oluştur" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Button mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+         </content>
+    </Tab>
+    <Tab text="Receptionist">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="269.0" minWidth="10.0" prefWidth="250.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="0.0" prefWidth="426.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="552.0" minWidth="10.0" prefWidth="138.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="184.0" minHeight="0.0" prefHeight="180.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="385.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="365.0" minHeight="0.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="365.0" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="365.0" minHeight="0.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="365.0" minHeight="10.0" prefHeight="105.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Donor Bilgileri" GridPane.halignment="CENTER">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets top="-90.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adı" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Soy Adı" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="30.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </content>
+    </Tab>
+      <Tab text="Nurse">
+         <content>
+         <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab text="Kan Teslimi">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="45.0" layoutY="73.0" text="Donor Id :" />
+                  <Label layoutX="45.0" layoutY="123.0" text="Tarih :" />
+                  <Label layoutX="48.0" layoutY="180.0" text="Kan Türü :" />
+                  <Label layoutX="48.0" layoutY="223.0" text="Lab Testi :" />
+                  <TextField fx:id="tfNurseDId" layoutX="116.0" layoutY="69.0" />
+                  <TextField fx:id="tfNurseDate" layoutX="116.0" layoutY="119.0" />
+                  <TextField fx:id="tfNurseBType" layoutX="116.0" layoutY="176.0" />
+                  <TextField fx:id="tfNurseLRaport" layoutX="116.0" layoutY="219.0" />
+                  <Button fx:id="btnNurseSave" layoutX="339.0" layoutY="296.0" mnemonicParsing="false" text="Kaydet" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Kan Sorgusu">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+                <TableView fx:id="tvNurseView" prefHeight="569.0" prefWidth="800.0">
+                    <columns>
+                      <TableColumn prefWidth="184.0" text="Donor Id" />
+                      <TableColumn prefWidth="140.0" text="Tarih" />
+                      <TableColumn prefWidth="189.0" text="Kan Türü" />
+                      <TableColumn prefWidth="286.0" text="Lab  Raporu" />
+                    </columns>
+                  </TableView>
+            </children>
+        </AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+            </TabPane>
+         </content>
+      </Tab>
+      <Tab text="Storage ">
+         <content>
+            <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab text="Veri Ekle">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="68.0" layoutY="155.0" text="Kan Id :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="68.0" layoutY="223.0" text="Tarih :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="66.0" layoutY="286.0" text="Adres :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfStorageId" layoutX="130.0" layoutY="153.0" prefHeight="25.0" prefWidth="201.0" />
+                  <TextField fx:id="tfStorageDate" layoutX="130.0" layoutY="221.0" prefHeight="25.0" prefWidth="201.0" />
+                  <TextField fx:id="tfStorageAdress" layoutX="130.0" layoutY="284.0" prefHeight="25.0" prefWidth="201.0" />
+                  <Button fx:id="btnStorageSave" layoutX="419.0" layoutY="390.0" mnemonicParsing="false" text="Kaydet" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Veri Sorgusu">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tvStorageView" layoutX="1.0" prefHeight="571.0" prefWidth="800.0">
+                    <columns>
+                      <TableColumn prefWidth="234.0" text="Kan Id " />
+                        <TableColumn prefWidth="277.0" text="Tarih" />
+                        <TableColumn prefWidth="287.0" text="Adres " />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
+         </content>
+      </Tab>
+      <Tab text="Demander">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="88.0" layoutY="14.0" text="Ordered by Hospital">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="512.0" layoutY="14.0" text="Ordered by Patient">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="126.0" text="Hospital ID" />
+                  <Label layoutX="39.0" layoutY="74.0" text="Hospital Name" />
+                  <Label layoutX="461.0" layoutY="74.0" text="Patient Name" />
+                  <Label layoutX="461.0" layoutY="126.0" text="Patient TC number" />
+                  <Label layoutX="461.0" layoutY="176.0" text="Blood ID" />
+                  <TextField fx:id="tfDemanderHName" layoutX="165.0" layoutY="69.0" />
+                  <TextField fx:id="tfDemanderHId" layoutX="165.0" layoutY="121.0" />
+                  <TextField fx:id="tfDemanderPName" layoutX="606.0" layoutY="69.0" />
+                  <TextField fx:id="tfDemanderPTC" layoutX="606.0" layoutY="121.0" />
+                  <TextField fx:id="tfDemanderPBId" layoutX="606.0" layoutY="171.0" />
+                  <TextField fx:id="tfDemanderHBId" layoutX="165.0" layoutY="171.0" />
+                  <Label layoutX="39.0" layoutY="176.0" text="Blood ID" />
+                  <Button fx:id="btnDemanderHRegister" layoutX="289.0" layoutY="238.0" mnemonicParsing="false" text="Başvur" />
+                  <Button fx:id="btnDemanderPRegister" layoutX="728.0" layoutY="238.0" mnemonicParsing="false" text="Başvur" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Lab Report">
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TabPane prefHeight="575.0" prefWidth="821.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Veri Ekle">
+                           <content>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="55.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="98.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="139.0" text="Label" />
+                                    <Label layoutX="14.0" layoutY="188.0" text="Label" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                      </Tab>
+                      <Tab text="Veri Sorgu">
+                           <content>
+                              <FlowPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView prefHeight="534.0" prefWidth="822.0">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </FlowPane>
+                           </content>
+                      </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Kan Teslimi">
+         <content>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
